@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#123c3a">
+<meta name="description" content="NordLingo – Norwegisch und Isländisch mit 15 Minuten täglich lernen.">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<title>NordLingo – Sprachtraining</title>
+</head>
+<body>
+<header class="top">
+  <div class="brand-mark">N</div>
+  <div><p class="eyebrow">DEIN SPRACHABENTEUER</p><h1>NordLingo</h1></div>
+  <div class="streak" aria-label="Tagesziel">15′<small>pro Tag</small></div>
+</header>
+<main>
+  <section class="welcome">
+    <p class="eyebrow">HEUTE IST DEIN TAG</p>
+    <h2>Ein bisschen üben.<br><span>Viel mehr verstehen.</span></h2>
+    <p>Starte mit 15 Minuten Norwegisch oder entdecke die Grundlagen des Isländischen.</p>
+    <div class="progress-row"><span>Dein Lernfortschritt</span><strong id="progressLabel">0 %</strong></div>
+    <div class="progress-track"><div id="progressBar"></div></div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading"><div><p class="eyebrow">DEINE SPRACHEN</p><h2>Was möchtest du lernen?</h2></div></div>
+    <div class="language-grid">
+      <button class="language-card active" data-language="no"><span class="flag">🇳🇴</span><span class="lang-title">Norwegisch</span><span class="lang-sub">Dein Hauptkurs · Anfänger</span><span class="arrow">↗</span></button>
+      <button class="language-card" data-language="is"><span class="flag">🇮🇸</span><span class="lang-title">Isländisch</span><span class="lang-sub">Die wichtigsten Grundlagen</span><span class="arrow">↗</span></button>
+    </div>
+  </section>
+
+  <section class="section plan">
+    <div class="section-heading"><div><p class="eyebrow">DEIN TAGESPLAN</p><h2>15 Minuten für dich</h2></div><span class="pill">Jeden Tag</span></div>
+    <div class="plan-item"><span class="plan-icon">↻</span><div><strong>Wiederholen</strong><small>3 Minuten · Bekannte Wörter festigen</small></div><span class="minutes">3 min</span></div>
+    <div class="plan-item"><span class="plan-icon">✦</span><div><strong>Neue Wörter</strong><small>4 Minuten · Lesen und anhören</small></div><span class="minutes">4 min</span></div>
+    <div class="plan-item"><span class="plan-icon">✎</span><div><strong>Sätze üben</strong><small>4 Minuten · Übersetzen und schreiben</small></div><span class="minutes">4 min</span></div>
+    <div class="plan-item"><span class="plan-icon">♫</span><div><strong>Hören & sprechen</strong><small>3 Minuten · Laut nachsprechen</small></div><span class="minutes">3 min</span></div>
+    <div class="plan-item"><span class="plan-icon">✓</span><div><strong>Tagesquiz</strong><small>1 Minute · Wissen testen</small></div><span class="minutes">1 min</span></div>
+    <button class="primary wide" id="startLesson">Heutige Lektion starten <span>→</span></button>
+  </section>
+
+  <section class="section lesson hidden" id="lessonPanel">
+    <div class="lesson-head"><div><p class="eyebrow">LEKTION 01</p><h2 id="lessonTitle">Begrüßungen</h2></div><button class="text-button" id="closeLesson">Schließen ✕</button></div>
+    <div class="word-card">
+      <p class="eyebrow">AUF DEUTSCH</p><h3 id="wordGerman">Guten Morgen</h3>
+      <div class="translation" id="wordNative">God morgen</div>
+      <p class="pronunciation" id="wordPronunciation">Ungefähre Aussprache: „gu mor'n“</p>
+      <button class="secondary" id="speakWord">🔊 Anhören</button>
+    </div>
+    <div class="lesson-actions"><button class="secondary" id="prevWord">← Zurück</button><span id="wordCount">1 / 5</span><button class="primary" id="nextWord">Weiter →</button></div>
+    <div class="quiz-card">
+      <p class="eyebrow">KURZES QUIZ</p><h3 id="quizQuestion">Was bedeutet „Hei“?</h3>
+      <div id="quizOptions" class="quiz-options"></div>
+      <p id="quizFeedback" role="status" class="feedback"></p>
+      <button id="nextQuiz" class="primary wide hidden">Nächste Frage →</button>
+    </div>
+  </section>
+  <section class="section note">
+    <span class="note-icon">☀</span><div><strong>Kleine Schritte zählen.</strong><p>Sprich Wörter laut aus und wiederhole schwierige Begriffe morgen noch einmal.</p></div>
+  </section>
+</main>
+<footer>NordLingo · Lernversion 0.1 <span>Dein Tempo. Dein Norden.</span></footer>
+<script src="app.js"></script>
+</body>
+</html>

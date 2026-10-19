@@ -1,0 +1,12 @@
+{
+  "name": "NordLingo – Norwegisch & Isländisch",
+  "short_name": "NordLingo",
+  "description": "Täglich 15 Minuten Norwegisch und Isländisch lernen.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f7f3",
+  "theme_color": "#123c3a",
+  "lang": "de",
+  "icons": []
+}
